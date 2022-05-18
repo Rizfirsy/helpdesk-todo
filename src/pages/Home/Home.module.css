@@ -1,0 +1,46 @@
+.hero {
+  background-image: url("../../assets/hero-image.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 467px;
+}
+
+.heroContent {
+  background-color: rgba(11, 151, 60, 0.5);
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+
+  color: white;
+  position: relative;
+}
+
+.heroContent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 163, 69, 0.5);
+  right: -10%;
+}
+
+.heroContent h1 {
+  z-index: 1;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.heroContent p {
+  width: 500px;
+  text-align: right;
+  z-index: 1;
+  line-height: 150%;
+}
